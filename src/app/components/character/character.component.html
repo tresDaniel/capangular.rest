@@ -1,0 +1,22 @@
+<div class="character"></div>
+<div class="content">
+    <div class="character-text">
+        <h2>{{character.name}}'s Page</h2>
+        <span>Name: {{character.name | empty }}</span>  <br>
+        <span>Title: {{character.title | empty }}</span>  <br>
+        <span>Vision: {{character.vision | empty }}</span>  <br>
+        <span>Weapon: {{character.weapon | empty }}</span>  <br>
+        <span>Gender: {{character.gender | empty }}</span>  <br>
+        <span>Nation: {{character.nation | empty }}</span>  <br>
+        <span>Affiliation: {{character.affiliation | empty }}</span> <br>
+        <span>Special Dish: {{character.specialDish | empty }}</span>  <br>
+        <span>Rarity: {{character.rarity | empty }}</span><br>
+        <span>Constellation: {{character.constellation | empty }}</span><br>
+        <span>Birthday: {{character.birthday | empty | date:'MM/dd' }}</span>  <br>
+        <span>Description: {{character.description | empty }}</span>  <br>
+    </div>
+
+    <div class="character-portrait">
+        <img src="{{portraitUrl}}">
+    </div>
+</div>   

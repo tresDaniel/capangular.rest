@@ -1,0 +1,4 @@
+
+    <ul *ngFor="let character of characters">
+        <li><a [routerLink]="[character]" routerLinkActive="active">{{ character | titlecase}} </a></li>
+    </ul>
